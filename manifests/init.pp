@@ -1,4 +1,13 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+# Public: Install MacBreakZ to /Applications.
+#
+# Examples
+#
+#   include macbreakz
+class macbreakz {
+  package { 'MacBreakZ':
+    provider => 'appdmg',
+    source   => 'http://d3k6s0oeufjjjn.cloudfront.net/download0_d251e24/MacBreakZ5.dmg',
+  }
 }
+
+

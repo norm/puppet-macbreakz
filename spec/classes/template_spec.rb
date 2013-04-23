@@ -1,9 +1,10 @@
 require 'spec_helper'
-# Rename this file to classname_spec.rb
-# Check other boxen modules for examples
-# or read http://rspec-puppet.com/tutorial/
-describe 'template' do
+
+describe 'macbreakz' do
   it do
-    should contain_anchor('Hello_World')
+    should contain_package('MacBreakZ').with({
+      :provider => 'appdmg',
+      :source   => 'http://d3k6s0oeufjjjn.cloudfront.net/download0_d251e24/MacBreakZ5.dmg',
+    })
   end
 end
